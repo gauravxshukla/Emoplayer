@@ -1,0 +1,398 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>EmoPlayer-Where emotions meets music</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'chk/img/emo-logo.svg' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{%  static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="{% static 'chk/img/emo-logo.svg' %}" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#demo">Demo</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading h1">EmoPlayer</div>
+                <div class="h4">Where emotions meet music.</div>
+                <br><br><br><br><br>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Tell Me More</a>
+            </div>
+        </header>
+        <!-- Live Demo-->
+        <section class="page-section" id="demo">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Live Demo</h2>
+                    <h3 class="section-subheading text-muted">Here is the live demo of working of our project.</h3>
+                    <h1>Emoplayer Live Stream</h1>
+                    <img src="{% url 'Emo_feed' %}">
+<form action="rend">
+   <input type="submit"> 
+</form>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Here are our successful clients who used our products.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'chk/img/portfolio/portfolio-thumbnail.png' %}" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Adesh Kotgirwar</div>
+                                <div class="portfolio-caption-subheading text-muted">Emotion - Happy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'chk/img/portfolio/portfolio-thumbnail.png' %}" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Aayush Muley</div>
+                                <div class="portfolio-caption-subheading text-muted">Emotion - Angry</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'chk/img/portfolio/portfolio-thumbnail.png' %}" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Yash Daware</div>
+                                <div class="portfolio-caption-subheading text-muted">Emotion - Sad</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'chk/img/portfolio/portfolio-thumbnail.png' %}" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Jayesh Kapse</div>
+                                <div class="portfolio-caption-subheading text-muted">Emotion - </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{% static 'chk/img/portfolio/portfolio-thumbnail.png' %}" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Gaurav Shukla</div>
+                                <div class="portfolio-caption-subheading text-muted">Emotion -</div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <br><br>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'chk/img/about/1.png' %}" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>History</h1>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">From ancient times,<br>Humans respond and react to music and that music has a high 
+                                impact on person’s brain activity.<br>Recent studies confirm that an average individual spends up to four hours on 
+                                audio/video media every day.
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'chk/img/about/2.png' %}" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Problem?</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">In this highly competitive world when sometimes we have a bad day or we have no idea what we are feeling at a particular moment. We just need something to listen to refresh our mood. </p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'chk/img/about/3.png' %}" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>EmoPlayer</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Well,<br>We thought of making this job easy for you.<br>EmoPlayer(An Emotion based music player) is a novel media player which suggests you songs/videos based on the emotions you are feeling at the moment.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" style="background-color: #1cbbb4;">
+                            <h4>
+                                Be a Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">"Team work makes the dream work."</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'chk/img/team/1.jpg' %}" alt="" />
+                            <h4>Adesh Kotgirwar</h4>
+                            <p class="text-muted">Backend developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'chk/img/team/1.jpg' %}" alt="" />
+                            <h4>Gaurav Shukla</h4>
+                            <p class="text-muted">Frontend Designer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'chk/img/team/1.jpg' %}" alt="" />
+                            <h4>Aayush Muley</h4>
+                            <p class="text-muted">Backend Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'chk/img/team/1.jpg' %}" alt="" />
+                            <h4>Jayesh Kapse</h4>
+                            <p class="text-muted">Backend developer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'chk/img/team/1.jpg' %}" alt="" />
+                            <h4>Yash Daware</h4>
+                            <p class="text-muted">Frontend Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                </div> -->
+            </div>
+        </section>
+        <!-- Portfolio Modals-->
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="{% static 'chk/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Adesh Kotgirwar</h2>
+                                    <p class="item-intro text-muted">Emotion - Happy</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'chk/img/portfolio/portfolio-full.png' %}" alt="" />
+                                    <p>Our Emo based player detected his emotion to be "Happy".<br> So, Our algorithm suggested him some light music.</p>
+                                    <ul class="list-inline">
+                                        <li>Playlist link</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="{% static 'chk/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Aayush Muley</h2>
+                                    <p class="item-intro text-muted">Emotion - Happy</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'chk/img/portfolio/portfolio-full.png' %}" alt="" />
+                                    <p>Our Emo based player detected his emotion to be "Happy".<br> So, Our algorithm suggested him some light music.</p>
+                                    <ul class="list-inline">
+                                        <li>Playlist link</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="{% static 'chk/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Yash Daware</h2>
+                                    <p class="item-intro text-muted">Emotion - Happy</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'chk/img/portfolio/portfolio-full.png' %}" alt="" />
+                                    <p>Our Emo based player detected his emotion to be "Happy".<br> So, Our algorithm suggested him some light music.</p>
+                                    <ul class="list-inline">
+                                        <li>Playlist link</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="{% static 'chk/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Jayesh Kapse</h2>
+                                    <p class="item-intro text-muted">Emotion - Happy</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'chk/img/portfolio/portfolio-full.png' %}" alt="" />
+                                    <p>Our Emo based player detected his emotion to be "Happy".<br> So, Our algorithm suggested him some light music.</p>
+                                    <ul class="list-inline">
+                                        <li>Playlist link</li>
+                                    </ul>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="{% static 'chk/img/close-icon.svg' %}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Gaurav Shukla</h2>
+                                    <p class="item-intro text-muted">Emotion - Happy</p>
+                                    <img class="img-fluid d-block mx-auto" src="{% static 'chk/img/portfolio/portfolio-full.png' %}" alt="" />
+                                    <p>Our Emo based player detected his emotion to be "Happy".<br> So, Our algorithm suggested him some light music.</p>
+                                    <ul class="list-inline">
+                                        <li>Playlist link</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS
+        <script src="{%  static 'chk/mail/jqBootstrapValidation.js' %}"></script>
+        <script src="{%  static 'chk/mail/contact_me.js' %}"></script>-->
+        <!-- Core theme JS-->
+        <script src="{%  static 'js/scripts.js' %}"></script>
+    </body>
+</html>
