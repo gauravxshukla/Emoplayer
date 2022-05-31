@@ -29,7 +29,7 @@ The emotion detection model is trained with data set containing more than 30000 
 emotion and, the age and gender dataset contains around 25000 images which add high accuracy
 to the model.
 
-# Achitectural Design Of Emo Player
+# Architectural Design Of Emo Player
 ![image](https://user-images.githubusercontent.com/82375003/171281100-c4be1898-2f22-4657-a2a0-3bd95ffb2749.png)
 
 
